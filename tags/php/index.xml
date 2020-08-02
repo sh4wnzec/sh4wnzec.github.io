@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>简单的梦</title>
-    <link>https://sh4wnzec.github.io/</link>
-    <description>Recent content on 简单的梦</description>
+    <title>PHP on 简单的梦</title>
+    <link>https://sh4wnzec.github.io/tags/php/</link>
+    <description>Recent content in PHP on 简单的梦</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://sh4wnzec.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sh4wnzec.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://sh4wnzec.github.io/about/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/about/</guid>
-      <description>😀</description>
-    </item>
-    
-    <item>
-      <title>初见</title>
-      <link>https://sh4wnzec.github.io/post/first-arcticle/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/post/first-arcticle/</guid>
-      <description>大家好，我是Sh4wnZec，一个辣鸡程序员，我今后会在Blog里记入自己的想法和笔记~</description>
-    </item>
     
     <item>
       <title>判断经纬度是否在区域范围内</title>

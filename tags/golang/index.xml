@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on 简单的梦</title>
+    <link>https://sh4wnzec.github.io/tags/golang/</link>
+    <description>Recent content in Golang on 简单的梦</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Iris-Go学习笔记</title>
+      <link>https://sh4wnzec.github.io/post/study-iris-go/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/study-iris-go/</guid>
+      <description>安装 错误1 开始学习Go-Iris框架，跟着文档走安装流程 go get github.com/kataras/iris 这一步时,却报错： cannot find package &amp;#34;github.com/russross/blackfriday/v2&amp;#34; in any of: D:\Go\src\github.com\russross\blackfriday\v2 (from $GOROOT) D:\workspace\goproject\src\github.com\russross\blackfriday\v2 (from $GOPATH) cannot find package &amp;#34;github.com/CloudyKit/jet/v4&amp;#34; in any of: D:\Go\src\github.com\CloudyKit\jet\v4 (from $GOROOT) D:\workspace\goproject\src\github.com\CloudyKit\jet\v4 (from $GOPATH) 解决方案 暂无</description>
+    </item>
+    
+  </channel>
+</rss>

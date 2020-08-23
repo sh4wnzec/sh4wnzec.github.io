@@ -12,7 +12,7 @@
 	
     
     
-    <meta name="description" content="安装 错误1 开始学习Go-Iris框架，跟着文档走安装流程 go get github.com/kataras/iris 这一步时,却报错： cannot find package &amp;#34;github.com/russross/blackfriday/v2&amp;#34; in any of: D:\Go\src\github.com\russross\blackfriday\v2 (from $GOROOT) D:\workspace\goproject\src\github.com\russross\blackfriday\v2 (from $GOPATH) cannot find package &amp;#34;github.com/CloudyKit/jet/v4&amp;#34; in any of: D:\Go\src\github.com\CloudyKit\jet\v4 (from $GOROOT) D:\workspace\goproject\src\github.com\CloudyKit\jet\v4 (from $GOPATH) 解决方案 暂无" />
+    <meta name="description" content="安装 错误1 开始学习Go-Iris框架，跟着文档走安装流程 go get github.com/kataras/iris 这一步时，却报错： cannot find package &amp;#34;github.com/russross/blackfriday/v2&amp;#34; in any of: D:\Go\src\github.com\russross\blackfriday\v2 (from $GOROOT) D:\workspace\goproject\src\github.com\russross\blackfriday\v2 (from $GOPATH) cannot find package &amp;#34;github.com/CloudyKit/jet/v4&amp;#34; in any of: D:\Go\src\github.com\CloudyKit\jet\v4 (from $GOROOT) D:\workspace\goproject\src\github.com\CloudyKit\jet\v4 (from $GOPATH) 解决过程 这里提示在 $GOROOT \src\github.com\ 和 $GOPATH \src\github.com 中没有找到对应的包文件，但实际我们只需要" />
     
 
     
@@ -108,18 +108,54 @@
                         <h2><a href='/post/study-iris-go/'>Iris-Go学习笔记</a></h2>
                         <span class="date">2020.08.23</span>
                     </div>
-                    <div class="post_content markdown"><h1 id="安装">安装</h1>
-<h2 id="错误1">错误1</h2>
+                    <div class="post_content markdown"><h2 id="安装">安装</h2>
+<h3 id="错误1">错误1</h3>
 <p>开始学习Go-Iris框架，跟着文档走安装流程</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">go</span> <span class="nx">get</span> <span class="nx">github</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">kataras</span><span class="o">/</span><span class="nx">iris</span>
-</code></pre></div><p>这一步时,却报错：</p>
+</code></pre></div><p>这一步时，却报错：</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">cannot find package <span class="s2">&#34;github.com/russross/blackfriday/v2&#34;</span> in any of:
         D:<span class="se">\G</span>o<span class="se">\s</span>rc<span class="se">\g</span>ithub.com<span class="se">\r</span>ussross<span class="se">\b</span>lackfriday<span class="se">\v</span><span class="m">2</span> <span class="o">(</span>from <span class="nv">$GOROOT</span><span class="o">)</span>
         D:<span class="se">\w</span>orkspace<span class="se">\g</span>oproject<span class="se">\s</span>rc<span class="se">\g</span>ithub.com<span class="se">\r</span>ussross<span class="se">\b</span>lackfriday<span class="se">\v</span><span class="m">2</span> <span class="o">(</span>from <span class="nv">$GOPATH</span><span class="o">)</span>
 cannot find package <span class="s2">&#34;github.com/CloudyKit/jet/v4&#34;</span> in any of:
         D:<span class="se">\G</span>o<span class="se">\s</span>rc<span class="se">\g</span>ithub.com<span class="se">\C</span>loudyKit<span class="se">\j</span>et<span class="se">\v</span><span class="m">4</span> <span class="o">(</span>from <span class="nv">$GOROOT</span><span class="o">)</span>
         D:<span class="se">\w</span>orkspace<span class="se">\g</span>oproject<span class="se">\s</span>rc<span class="se">\g</span>ithub.com<span class="se">\C</span>loudyKit<span class="se">\j</span>et<span class="se">\v</span><span class="m">4</span> <span class="o">(</span>from <span class="nv">$GOPATH</span><span class="o">)</span>
-</code></pre></div><h2 id="解决方案">解决方案</h2>
+</code></pre></div><h3 id="解决过程">解决过程</h3>
+<p>这里提示在 <code>$GOROOT \src\github.com\</code> 和 <code>$GOPATH \src\github.com</code> 中没有找到对应的包文件，但实际我们只需要管<code>$GOPATH</code>的路径就行，那我们要先去这<code>$GOPATH</code>下看看。</p>
+<p>切换到 <code>$GOROOT \src\github.com\russross\blackfriday</code> 目录下</p>
+<ul>
+<li>blackfriday
+<ul>
+<li><a href="mailto:v2@v2.0.1">v2@v2.0.1</a>
+<ul>
+<li>.git</li>
+<li>testdata</li>
+<li>.gitignore</li>
+<li>.travis.yml</li>
+<li>block.go</li>
+<li>block_test.go</li>
+<li>doc.go</li>
+<li>go.mod</li>
+<li>html.go</li>
+<li>inline.go</li>
+<li>inline_test.go</li>
+<li>latex.go</li>
+<li>LICENSE.txt</li>
+<li>markdown.go</li>
+<li>markdown_test.go</li>
+<li>README.md</li>
+<li>ref_test.go</li>
+<li>smartypants.go</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>这么目录下是有文件的，打开 <code>go.mod</code> ，</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">module</span> <span class="nx">github</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">russross</span><span class="o">/</span><span class="nx">blackfriday</span><span class="o">/</span><span class="nx">v2</span>
+</code></pre></div><p>里面也定义了路径。</p>
+<p>那会不会是环境变量的问题呢？</p>
+<p>检查了下Go环境变量，同样没错。</p>
+<h3 id="解决方案">解决方案</h3>
 <p>暂无</p>
 </div>
                     <div class="post_footer">

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 简单的梦</title>
+    <title>Categories on Sh4wnZec</title>
     <link>https://sh4wnzec.github.io/categories/</link>
-    <description>Recent content in Categories on 简单的梦</description>
+    <description>Recent content in Categories on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate>
@@ -39,11 +39,29 @@
     </item>
     
     <item>
-      <title>杂七杂八</title>
-      <link>https://sh4wnzec.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <title>Wechat</title>
+      <link>https://sh4wnzec.github.io/categories/wechat/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
+      <guid>https://sh4wnzec.github.io/categories/wechat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xposed</title>
+      <link>https://sh4wnzec.github.io/categories/xposed/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/categories/xposed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微信</title>
+      <link>https://sh4wnzec.github.io/categories/%E5%BE%AE%E4%BF%A1/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/categories/%E5%BE%AE%E4%BF%A1/</guid>
       <description></description>
     </item>
     

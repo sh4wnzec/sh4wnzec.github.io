@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xposed on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/tags/xposed/</link>
+    <description>Recent content in Xposed on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/tags/xposed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Xposed微X模块与太极的安装</title>
+      <link>https://sh4wnzec.github.io/post/wechat-xposed-model/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/wechat-xposed-model/</guid>
+      <description>工具 太极 微X模块 微信 教程 下载并安装「太极」与「微X模块」； 打开太极，点击右下角悬浮按钮，选择「模块管理」； 在「模块管理」中，把「微X模块」勾选上； 回到首页，点击右下角悬浮按钮，选择「创建应用」； 在「创</description>
+    </item>
+    
+  </channel>
+</rss>

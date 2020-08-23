@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 简单的梦</title>
+    <title>Posts on Sh4wnZec</title>
     <link>https://sh4wnzec.github.io/post/</link>
-    <description>Recent content in Posts on 简单的梦</description>
+    <description>Recent content in Posts on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Aug 2020 00:00:00 +0000</lastBuildDate>
@@ -21,21 +21,21 @@
     </item>
     
     <item>
-      <title>初见</title>
-      <link>https://sh4wnzec.github.io/post/first-arcticle/</link>
-      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/post/first-arcticle/</guid>
-      <description>大家好，我是Sh4wnZec，一个辣鸡程序员，我今后会在Blog里记入自己的想法和笔记~</description>
-    </item>
-    
-    <item>
       <title>判断经纬度是否在区域范围内</title>
       <link>https://sh4wnzec.github.io/post/longitude-and-latitude-range-query/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/post/longitude-and-latitude-range-query/</guid>
       <description>&amp;lt;?php if(!$_GET[&amp;#39;longitude&amp;#39;] || !$_GET[&amp;#39;latitude&amp;#39;]) exit(&amp;#39;-1&amp;#39;); // longitude 经度 // latitude 维度 class Convert{ private $PI = 3.14159265358979324; private $x_pi = 0; public function __construct() { $this-&amp;gt;x_pi = 3.14159265358979324 * 3000.0 / 180.0; } /** * 判断一个坐标是否在圆内 * 思路：判断此点的经纬度到圆心的距离 然后和半径做比较 * 如果此点刚好在圆上 则返回true * @param $point [&amp;#39;lng&amp;#39;=&amp;gt;&amp;#39;&amp;#39;,&amp;#39;lat&amp;#39;=&amp;gt;&amp;#39;&amp;#39;] array</description>
+    </item>
+    
+    <item>
+      <title>Xposed微X模块与太极的安装</title>
+      <link>https://sh4wnzec.github.io/post/wechat-xposed-model/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/wechat-xposed-model/</guid>
+      <description>工具 太极 微X模块 微信 教程 下载并安装「太极」与「微X模块」； 打开太极，点击右下角悬浮按钮，选择「模块管理」； 在「模块管理」中，把「微X模块」勾选上； 回到首页，点击右下角悬浮按钮，选择「创建应用」； 在「创</description>
     </item>
     
   </channel>

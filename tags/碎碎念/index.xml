@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>碎碎念 on 简单的梦</title>
+    <title>碎碎念 on Sh4wnZec</title>
     <link>https://sh4wnzec.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
-    <description>Recent content in 碎碎念 on 简单的梦</description>
+    <description>Recent content in 碎碎念 on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/post/first-arcticle/</guid>
-      <description>大家好，我是Sh4wnZec，一个辣鸡程序员，我今后会在Blog里记入自己的想法和笔记~</description>
+      <description>Sh4wnZec，一个辣鸡程序员。 PHP Db事务 以后写事务一定要先把完整句子写完再写逻辑。</description>
     </item>
     
   </channel>

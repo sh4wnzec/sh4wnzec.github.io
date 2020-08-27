@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>初见</title>
+      <link>https://sh4wnzec.github.io/post/first-arcticle/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/first-arcticle/</guid>
+      <description>Sh4wnZec，一个辣鸡程序员。 PHP Db事务 以后写事务一定要先把完整句子写完再写逻辑。</description>
+    </item>
+    
+    <item>
       <title>判断经纬度是否在区域范围内</title>
       <link>https://sh4wnzec.github.io/post/longitude-and-latitude-range-query/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>

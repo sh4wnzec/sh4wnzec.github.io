@@ -154,10 +154,12 @@ cannot find package <span class="s2">&#34;github.com/CloudyKit/jet/v4&#34;</span
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">module</span> <span class="nx">github</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">russross</span><span class="o">/</span><span class="nx">blackfriday</span><span class="o">/</span><span class="nx">v2</span>
 </code></pre></div><p>里面也定义了路径。</p>
 <p>那会不会是环境变量的问题呢？</p>
-<p>检查了下Go环境变量，同样没错。</p>
+<p>检查了下 Go 环境变量，控制台输入 <code>go env</code>，环境变量同样没错。</p>
 <h3 id="解决方案">解决方案</h3>
-<p>最后检查了下代理，发现是GOPROXY的问题，控制台输入<code>go env -w GOPROXY=https://goproxy.cn,direct</code>，把代理环境改为国内的，就能正常安装了。
-淦。</p>
+<p>One Month Later&hellip;</p>
+<p>不是环境变量的问题&hellip;</p>
+<p>最后检查了下代理，发现是 GOPROXY 的问题，控制台输入 <code>go env -w GOPROXY=https://goproxy.cn,direct</code>，把代理环境改为国内的，就能正常安装了。</p>
+<p>淦。</p>
 </div>
                     <div class="post_footer">
                         

@@ -156,7 +156,8 @@ cannot find package <span class="s2">&#34;github.com/CloudyKit/jet/v4&#34;</span
 <p>那会不会是环境变量的问题呢？</p>
 <p>检查了下Go环境变量，同样没错。</p>
 <h3 id="解决方案">解决方案</h3>
-<p>暂无</p>
+<p>最后检查了下代理，发现是GOPROXY的问题，控制台输入<code>go env -w GOPROXY=https://goproxy.cn,direct</code>，把代理环境改为国内的，就能正常安装了。
+淦。</p>
 </div>
                     <div class="post_footer">
                         

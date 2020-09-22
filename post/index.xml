@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>常用正则表达式</title>
+      <link>https://sh4wnzec.github.io/post/regular-expression/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/regular-expression/</guid>
+      <description>中国大陆手机号格式 JavaScript：^1[1-9]\d{9}$ Java：^1[1-9]\\d{9}$ 密码字符只可使用数字和大小写英文字母 ^[0-9a-zA-Z]+$ 密码应同时包含英文或数字 ^(([a-zA-Z]+[0-9]+)|([0-9]+[a-zA-Z]+))[a-zA-Z0-9]* 中文格式验证 JavaScript</description>
+    </item>
+    
+    <item>
       <title>查找被占用端口</title>
       <link>https://sh4wnzec.github.io/post/find-occupied-ports/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
@@ -27,15 +36,6 @@
       
       <guid>https://sh4wnzec.github.io/post/php-mark/</guid>
       <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了declare，哪个文件中的所有代码就需要检查。</description>
-    </item>
-    
-    <item>
-      <title>常用正则表达式</title>
-      <link>https://sh4wnzec.github.io/post/regular-expression/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/post/regular-expression/</guid>
-      <description>中国大陆手机号格式 JavaScript：^1[1-9]\d{9}$ Java：^1[1-9]\\d{9}$ 密码字符只可使用数字和大小写英文字母 ^[0-9a-zA-Z]+$ 密码应同时包含英文或数字 ^(([a-zA-Z]+[0-9]+)|([0-9]+[a-zA-Z]+))[a-zA-Z0-9]* 中文格式验证 JavaScript</description>
     </item>
     
     <item>

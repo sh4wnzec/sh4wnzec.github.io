@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/tags/java/</link>
+    <description>Recent content in Java on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常用正则表达式</title>
+      <link>https://sh4wnzec.github.io/post/regular-expression/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/regular-expression/</guid>
+      <description>中国大陆手机号格式 JavaScript：^1[1-9]\d{9}$ Java：^1[1-9]\\d{9}$ 密码字符只可使用数字和大小写英文字母 ^[0-9a-zA-Z]+$ 密码应同时包含英文或数字 ^(([a-zA-Z]+[0-9]+)|([0-9]+[a-zA-Z]+))[a-zA-Z0-9]* 中文格式验证 JavaScript</description>
+    </item>
+    
+  </channel>
+</rss>

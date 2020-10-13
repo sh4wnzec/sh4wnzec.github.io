@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-	<meta name="generator" content="Hugo 0.74.3" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,21 +8,19 @@
 	
 	
 	
-	<title>Sh4wnZec ｜ 岛 </title>
+	<title>PHP 笔记 ｜ Sh4wnZec</title>
 	
     
     
-    <meta name="description" content="Blog." />
+    <meta name="description" content="问题 有时候在 VSCode 终端使用命令是，会提示： [command] : 无法加载文件 C:\Users\XXX\AppData\Roaming\npm\gitbook.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 a" />
     
 
     
     
-    <meta name="keywords" content="Blog, Sh4wnZec" />
+    <meta name="keywords" content="VSCode" />
     
 
 	
-	<link rel="alternate" type="application/rss+xml" href="https://sh4wnzec.github.io/index.xml" title="Sh4wnZec" />
-    
     
     <link rel="shortcut icon" href="https://sh4wnzec.github.io/images/favicon.ico" />
 
@@ -105,133 +102,52 @@
     </div>
 </div>
         <div class="content">
-            
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='/post/study-iris-go/'>Iris-Go学习笔记</a></h2>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.08.23</span>
-                </span>
+            <div class="post_page">
+                <div class="post animate__animated animate__fadeInDown">
+                    <div class="post_title post_detail_title">
+                        <h2><a href='/post/vscode-mark/'>PHP 笔记</a></h2>
+                        <span class="date">2020.10.13</span>
+                    </div>
+                    <div class="post_content markdown"><hr>
+<h3 id="问题">问题</h3>
+<p>有时候在 VSCode 终端使用命令是，会提示：</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">  <span class="o">[</span>command<span class="o">]</span> : 无法加载文件 C:<span class="se">\U</span>sers<span class="se">\X</span>XX<span class="se">\A</span>ppData<span class="se">\R</span>oaming<span class="se">\n</span>pm<span class="se">\g</span>itbook.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID<span class="o">=</span><span class="m">135170</span> 中的 about_Execution_Policies。
+  所在位置 行:1 字符: <span class="m">1</span>
+  + gitbook serve
+  + ~~~~~~~
+      + CategoryInfo          : SecurityError: <span class="o">(</span>:<span class="o">)</span> <span class="o">[]</span>，PSSecurityException
+      + FullyQualifiedErrorId : UnauthorizedAccess
+</code></pre></div><h3 id="解决方法">解决方法</h3>
+<p>在 Powshell 执行 <code>set-ExecutionPolicy RemoteSigned</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">执行策略更改
+执行策略可帮助你防止执行不信任的脚本。更改执行策略可能会产生安全风险，如 https:/go.microsoft.com/fwlink/?LinkID<span class="o">=</span><span class="m">135170</span>
+中的 about_Execution_Policies 帮助主题所述。是否要更改执行策略?
+<span class="o">[</span>Y<span class="o">]</span> 是<span class="o">(</span>Y<span class="o">)</span>  <span class="o">[</span>A<span class="o">]</span> 全是<span class="o">(</span>A<span class="o">)</span>  <span class="o">[</span>N<span class="o">]</span> 否<span class="o">(</span>N<span class="o">)</span>  <span class="o">[</span>L<span class="o">]</span> 全否<span class="o">(</span>L<span class="o">)</span>  <span class="o">[</span>S<span class="o">]</span> 暂停<span class="o">(</span>S<span class="o">)</span>  <span class="o">[</span>?<span class="o">]</span> 帮助 <span class="o">(</span>默认值为“N”<span class="o">)</span>:
+</code></pre></div><p>敲 A 或者 Y 即可。</p>
+</div>
+                    <div class="post_footer">
+                        
+                        <div class="meta">
+                            <div class="info">
+                                <span class="field tags">
+                                    <i class="ri-stack-line"></i>
+                                    
+                                    <a href="https://sh4wnzec.github.io/tags/vscode/">VSCode</a>
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
                 
-                <span class="field tags">
-                    <i class="ri-stack-line"></i>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/golang/">Golang</a>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/iris-go/">Iris-Go</a>
-                    
-                </span>
+                
+                <div class="doc_comments"></div>
                 
             </div>
         </div>
     </div>
-</div>
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='/post/first-arcticle/'>初见</a></h2>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.08.01</span>
-                </span>
-                
-                <span class="field tags">
-                    <i class="ri-stack-line"></i>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/">碎碎念</a>
-                    
-                </span>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='/post/longitude-and-latitude-range-query/'>判断经纬度是否在区域范围内</a></h2>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.08.01</span>
-                </span>
-                
-                <span class="field tags">
-                    <i class="ri-stack-line"></i>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/php/">PHP</a>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/%E7%BB%8F%E7%BA%AC%E5%BA%A6/">经纬度</a>
-                    
-                </span>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="post animated fadeInDown">
-    <div class="post_title">
-        <h2><a href='/post/clean-android-password/'>清除手机开机密码（一）</a></h2>
-    </div>
-    
-    <div class="post_footer">
-        <div class="meta">
-            <div class="info">
-                <span class="field">
-                    <i class="ri-map-pin-time-line"></i>
-                    <span class="date">2020.07.24</span>
-                </span>
-                
-                <span class="field tags">
-                    <i class="ri-stack-line"></i>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/android/">Android</a>
-                    
-                    <a href="https://sh4wnzec.github.io/tags/%E5%AF%86%E7%A0%81/">密码</a>
-                    
-                </span>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="pagination">
-    
-    
-    <a href="/" class="pre">
-        Prev
-    </a>
-    
-    
-    <a href="/page/3/" class="next">
-        Next
-    </a>
-    
-    
-</div>
-        </div>
-    </div>
+    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
     <footer class="footer">
     <div class="powered_by">
         <a href="https://varkai.com">Designed by VarKai,</a>

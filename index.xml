@@ -6,10 +6,19 @@
     <description>Recent content on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PHP 笔记</title>
+      <link>https://sh4wnzec.github.io/post/vscode-mark/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/post/vscode-mark/</guid>
+      <description>问题 有时候在 VSCode 终端使用命令是，会提示： [command] : 无法加载文件 C:\Users\XXX\AppData\Roaming\npm\gitbook.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.microsoft.com/fwlink/?LinkID=135170 中的 a</description>
+    </item>
     
     <item>
       <title>常用正则表达式</title>

@@ -6,89 +6,35 @@
     <description>Recent content in Categories on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>VSCode</title>
-      <link>https://sh4wnzec.github.io/categories/vscode/</link>
+      <title>手机・刷机</title>
+      <link>https://sh4wnzec.github.io/categories/%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/categories/%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程・技术</title>
+      <link>https://sh4wnzec.github.io/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/categories/vscode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://sh4wnzec.github.io/categories/java/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://sh4wnzec.github.io/categories/javascript/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://sh4wnzec.github.io/categories/windows/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/windows/</guid>
+      <guid>https://sh4wnzec.github.io/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>杂七杂八</title>
       <link>https://sh4wnzec.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://sh4wnzec.github.io/categories/golang/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PHP</title>
-      <link>https://sh4wnzec.github.io/categories/php/</link>
-      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Android</title>
-      <link>https://sh4wnzec.github.io/categories/android/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xposed</title>
-      <link>https://sh4wnzec.github.io/categories/xposed/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/categories/xposed/</guid>
       <description></description>
     </item>
     

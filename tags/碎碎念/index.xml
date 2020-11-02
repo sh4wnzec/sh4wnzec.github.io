@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>PHP 笔记</title>
+      <title>PHP 开启严格模式</title>
       <link>https://sh4wnzec.github.io/posts/php-mark/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/posts/php-mark/</guid>
-      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了declare，哪个文件中的所有代码就需要检查。</description>
+      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了 declare ，哪个文件中的所有代码就需要检查。</description>
     </item>
     
   </channel>

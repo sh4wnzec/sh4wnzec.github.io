@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>手机・刷机 on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/categories/%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA/</link>
+    <description>Recent content in 手机・刷机 on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/categories/%E6%89%8B%E6%9C%BA%E5%88%B7%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用 Tasker 实现短信自动转发</title>
+      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms/</guid>
+      <description>短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多； 我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是</description>
+    </item>
+    
+    <item>
+      <title>Xposed 微 X 模块与太极的安装</title>
+      <link>https://sh4wnzec.github.io/posts/wechat-xposed-model/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/wechat-xposed-model/</guid>
+      <description>工具 太极 / 微 X 模块 / 微信 教程 下载并安装「太极」与「微X模块」； 打开太极，点击右下角悬浮按钮，选择「模块管理」； 在「模块管理」中，把「微X模块」勾选上； 回到首页，点击右下角悬浮按钮，选择「创建应用」； 在</description>
+    </item>
+    
+    <item>
+      <title>清除手机开机密码（一）</title>
+      <link>https://sh4wnzec.github.io/posts/clean-android-password/</link>
+      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/clean-android-password/</guid>
+      <description>此教程适用于没有刷过 TeamWin Recovery Project(TWRP) 的 Android 手机 工具的准备 ADB工具包 数据线 Windows操作系统 进入 Recovery 模式 手机关机，每个手机进入 Recovery 模式的方法不同，有的是长按音量上键 + 电源键、有的是长按音量下键 + 电源键、有的则是音</description>
+    </item>
+    
+  </channel>
+</rss>

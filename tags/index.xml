@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SMS</title>
+      <link>https://sh4wnzec.github.io/tags/sms/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/tags/sms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tasker</title>
+      <link>https://sh4wnzec.github.io/tags/tasker/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/tags/tasker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>VSCode</title>
@@ -98,15 +116,6 @@
       <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/tags/android/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k &#34;杂七杂八&#34;</title>
-      <link>https://sh4wnzec.github.io/tags/k-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/tags/k-%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB/</guid>
       <description></description>
     </item>
     

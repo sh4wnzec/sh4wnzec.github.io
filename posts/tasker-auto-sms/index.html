@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Sh4wnZec">
+  <meta name="description" content="Blog.">
+  <meta name="keywords" content="[Blog Sh4wnZec]">
+  
+  <link rel="prev" href="https://sh4wnzec.github.io/posts/vscode-mark/" />
+  
+  <link rel="canonical" href="https://sh4wnzec.github.io/posts/tasker-auto-sms/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           利用 Tasker 实现短信自动转发 | Sh4wnZec
+       
+  </title>
+  <meta name="title" content="利用 Tasker 实现短信自动转发 | Sh4wnZec">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/sh4wnzec.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "利用 Tasker 实现短信自动转发",
+    "headline" : "利用 Tasker 实现短信自动转发",
+    "description" : "短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多； 我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是",
+    "inLanguage" : "en",
+    "author" : "Sh4wnZec",
+    "creator" : "Sh4wnZec",
+    "publisher": "Sh4wnZec",
+    "accountablePerson" : "Sh4wnZec",
+    "copyrightHolder" : "Sh4wnZec",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-11-02 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2020-11-02 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/sh4wnzec.github.io\/posts\/tasker-auto-sms\/",
+    "wordCount" : "926",
+    "keywords" : [ "Tasker","SMS", "Sh4wnZec"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">利用 Tasker 实现短信自动转发</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://sh4wnzec.github.io/" rel="author">Sh4wnZec</a> with ♥ 
+                <span class="post-time">
+                on <time datetime=2020-11-02 itemprop="datePublished">November 2, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+            
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <blockquote>
+<p>短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多；
+我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是我自己的手机号，为了哥们方便接受，便研究了一下这个功能；
+原理是<strong>用Tasker 截取短信，并存储在变量中，再通过 HTTP 请求把内容输出出去。</strong></p>
+</blockquote>
+<h2 id="前期准备">前期准备</h2>
+<p><a href="https://www.coolapk.com/apk/net.dinglisch.android.taskerm">Tasker</a></p>
+ <!-- / [Server 酱](http://sc.ftqq.com/3.version) / [Push Plus](https://pushplus.hxtrip.com/) / 微信 -->
+<h2 id="操作">操作</h2>
+<h3 id="截取短信">截取短信</h3>
+<p>首先我们在 <strong>配置文件 Tab 栏</strong> 点击右下角的 <code>+</code> 号：</p>
+<p><img src="../../images/tasker-auto-sms/add_new_task.jpg" alt="新建事务"></p>
+<p>点击 <strong>事务 → 电话 → 收到短信</strong></p>
+<p>类型选 <code>任意</code> 后直接返回</p>
+<p><img src="../../images/tasker-auto-sms/edit_task.png" alt="新建事务"></p>
+<p>点击「新建任务」：</p>
+<p><img src="../../images/tasker-auto-sms/new_task.jpg" alt="新建任务"></p>
+<p>这里要你随意输入一个名称，我输入 <strong>验证码转发</strong>，进入「任务编辑」页面。</p>
+<p><img src="../../images/tasker-auto-sms/edit_title.jpg" alt="编辑标题"></p>
+<p>点击右下角的 <code>+</code> 号，选择 <strong>代码 → 运行Shell命令</strong></p>
+<p>「命令」中输入： <code>echo &quot;%SMSRB&quot;|grep -iE &quot;码|碼|code&quot;</code></p>
+<p>「输入存储到」随意输入一个以 <code>%</code> 开头的变量，这里我输入了 <code>%VERIFICATION_CODE</code>：</p>
+<p><img src="../../images/tasker-auto-sms/shell_edit.jpg" alt="编辑shell命令"></p>
+<p>点击左上角返回</p>
+<p>再点击右上角的 <code>✓</code> 保存</p>
+<blockquote>
+<p>这里主要是把带码、碼、code 的短信，放在 <code>%VERIFICATION_CODE</code> 这个变量中</p>
+</blockquote>
+<p>接下来我们来试试看 Tasker 能不能截取到短信；</p>
+<p>我用另一个手机号给本机发送一条带“码”字的短信：</p>
+<p><img src="../../images/tasker-auto-sms/sms.png" alt="编辑标题"></p>
+<p>然后打开 Tasker，选择变量 Tab 栏：</p>
+<p><img src="../../images/tasker-auto-sms/verificition_code.png" alt="查看变量"></p>
+<p>果然短信已经存入变量中了。</p>
+<h3 id="推送到微信">推送到微信</h3>
+<p>推送到微信的话，我们要借助第三方信息推送平台。</p>
+<p>这里我列举出 <a href="http://sc.ftqq.com/3.version">Server 酱</a> 和 <a href="https://pushplus.hxtrip.com/">Push Plus</a>（支持群组） 这两个平台，如果您习惯其他平台，方法类似，可以作为参考；</p>
+<h4 id="server-酱">Server 酱</h4>
+<p>进入 <a href="http://sc.ftqq.com/3.version">Server 酱</a> 官网</p>
+<p>点击登入：</p>
+<p><img src="../../images/tasker-auto-sms/login.jpg" alt="登入"></p>
+<p>这里是直接用 Github 授权登录的，输入 Github 账号直接授权：</p>
+<p><img src="../../images/tasker-auto-sms/github_sign_in.png" alt="Github授权"></p>
+<p>接下来要绑定微信，点击微信推送，那手机微信扫码后关注：</p>
+<p><img src="../../images/tasker-auto-sms/wechat_qrcode.jpg" alt="扫码二维码绑定 server 酱"></p>
+<p>接下来点击发送消息，会看到 Server 酱给你的 <code>SCKEY</code>：</p>
+<p><img src="../../images/tasker-auto-sms/sckey.jpg" alt="sckey"></p>
+<p>为了方便以后修改，我们在手机 Tasker 中新建一个以 <code>%</code> 开头的变量，变量名随意，我命名 <code>%TOKEN</code>：</p>
+<p><img src="../../images/tasker-auto-sms/new_token.jpg" alt="新建变量"></p>
+<p>然后我们把获得的 <code>SCKEY</code> ，填入 <code>%TOKEN</code> 中：</p>
+<p><img src="../../images/tasker-auto-sms/edit_token.png" alt="输入变量"></p>
+<p>接下来我们新建一个任务</p>
+<p>点击 <strong>网络 → HTTP Request</strong>，然后在「URL」输入:</p>
+<p><code>https://sc.ftqq.com/%SCKEY.send?text=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;desp=%VERIFICATION_CODE</code></p>
+<p>接下来我们直接返回到首页，再点击右上角的 <code>✓</code> 保存，Server 酱的配置就完成啦！</p>
+<p>我们来测试一条带验证码的短信，看看能不能推送到微信里：</p>
+<p><img src="../../images/tasker-auto-sms/bd_sms.png" alt="测试短信"></p>
+<p>微信收到Server酱推送啦，成功！</p>
+<p><img src="../../images/tasker-auto-sms/ft_sms.png" alt="sever 酱推送"></p>
+<h4 id="push-plus累了明天写"><del>Push Plus(累了，明天写)</del></h4>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Sh4wnZec </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://sh4wnzec.github.io/posts/tasker-auto-sms/>https://sh4wnzec.github.io/posts/tasker-auto-sms/</span>
+            </p>
+            
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://sh4wnzec.github.io/tags/tasker/">
+                    #Tasker</a></span>
+            
+            <span class="tag"><a href="https://sh4wnzec.github.io/tags/sms/">
+                    #SMS</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://sh4wnzec.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://sh4wnzec.github.io/posts/vscode-mark/" class="prev" rel="prev" title="VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法"><i class="iconfont icon-left"></i>&nbsp;VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://sh4wnzec.github.io/">Sh4wnZec</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+  
+
+
+
+     </div>
+  </body>
+</html>

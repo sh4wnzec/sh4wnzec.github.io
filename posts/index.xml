@@ -6,13 +6,22 @@
     <description>Recent content in Posts on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>VSCode 笔记</title>
+      <title>利用 Tasker 实现短信自动转发</title>
+      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms/</guid>
+      <description>短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多； 我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是</description>
+    </item>
+    
+    <item>
+      <title>VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法</title>
       <link>https://sh4wnzec.github.io/posts/vscode-mark/</link>
       <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
       
@@ -48,12 +57,12 @@
     </item>
     
     <item>
-      <title>PHP 笔记</title>
+      <title>PHP 开启严格模式</title>
       <link>https://sh4wnzec.github.io/posts/php-mark/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/posts/php-mark/</guid>
-      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了declare，哪个文件中的所有代码就需要检查。</description>
+      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了 declare ，哪个文件中的所有代码就需要检查。</description>
     </item>
     
     <item>
@@ -71,7 +80,7 @@
       <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/posts/wechat-xposed-model/</guid>
-      <description>工具 太极 微 X 模块 微信 教程 下载并安装「太极」与「微X模块」； 打开太极，点击右下角悬浮按钮，选择「模块管理」； 在「模块管理」中，把「微X模块」勾选上； 回到首页，点击右下角悬浮按钮，选择「创建应用」； 在「创</description>
+      <description>工具 太极 / 微 X 模块 / 微信 教程 下载并安装「太极」与「微X模块」； 打开太极，点击右下角悬浮按钮，选择「模块管理」； 在「模块管理」中，把「微X模块」勾选上； 回到首页，点击右下角悬浮按钮，选择「创建应用」； 在</description>
     </item>
     
     <item>

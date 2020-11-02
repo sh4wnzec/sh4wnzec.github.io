@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tasker on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/tags/tasker/</link>
+    <description>Recent content in Tasker on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/tags/tasker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用 Tasker 实现短信自动转发</title>
+      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms/</guid>
+      <description>短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多； 我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是</description>
+    </item>
+    
+  </channel>
+</rss>

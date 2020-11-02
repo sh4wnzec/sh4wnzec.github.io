@@ -13,10 +13,10 @@
     
     <item>
       <title>常用正则表达式</title>
-      <link>https://sh4wnzec.github.io/post/regular-expression/</link>
+      <link>https://sh4wnzec.github.io/posts/regular-expression/</link>
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/post/regular-expression/</guid>
+      <guid>https://sh4wnzec.github.io/posts/regular-expression/</guid>
       <description>中国大陆手机号格式 JavaScript：^1[1-9]\d{9}$ Java：^1[1-9]\\d{9}$ 密码字符只可使用数字和大小写英文字母 ^[0-9a-zA-Z]+$ 密码应同时包含英文或数字 ^(([a-zA-Z]+[0-9]+)|([0-9]+[a-zA-Z]+))[a-zA-Z0-9]* 中文格式验证 JavaScript</description>
     </item>
     

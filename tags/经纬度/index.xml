@@ -13,10 +13,10 @@
     
     <item>
       <title>判断经纬度是否在区域范围内</title>
-      <link>https://sh4wnzec.github.io/post/longitude-and-latitude-range-query/</link>
+      <link>https://sh4wnzec.github.io/posts/longitude-and-latitude-range-query/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/post/longitude-and-latitude-range-query/</guid>
+      <guid>https://sh4wnzec.github.io/posts/longitude-and-latitude-range-query/</guid>
       <description>&amp;lt;?php if(!$_GET[&amp;#39;longitude&amp;#39;] || !$_GET[&amp;#39;latitude&amp;#39;]) exit(&amp;#39;-1&amp;#39;); // longitude 经度 // latitude 维度 class Convert{ private $PI = 3.14159265358979324; private $x_pi = 0; public function __construct() { $this-&amp;gt;x_pi = 3.14159265358979324 * 3000.0 / 180.0; } /** * 判断一个坐标是否在圆内 * 思路：判断此点的经纬度到圆心的距离 然后和半径做比较 * 如果此点刚好在圆上 则返回true * @param $point [&amp;#39;lng&amp;#39;=&amp;gt;&amp;#39;&amp;#39;,&amp;#39;lat&amp;#39;=&amp;gt;&amp;#39;&amp;#39;] array</description>
     </item>
     

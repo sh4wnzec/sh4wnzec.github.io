@@ -57,7 +57,7 @@
     "datePublished": "2020-11-02 00:00:00 \u002b0000 UTC",
     "dateModified" : "2020-11-02 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/sh4wnzec.github.io\/posts\/tasker-auto-sms\/",
-    "wordCount" : "926",
+    "wordCount" : "913",
     "keywords" : [ "Tasker","SMS", "Sh4wnZec"]
 }
 </script>
@@ -192,16 +192,16 @@
 <p><img src="../../images/tasker-auto-sms/github_sign_in.png" alt="Github授权"></p>
 <p>接下来要绑定微信，点击微信推送，那手机微信扫码后关注：</p>
 <p><img src="../../images/tasker-auto-sms/wechat_qrcode.jpg" alt="扫码二维码绑定 server 酱"></p>
-<p>接下来点击发送消息，会看到 Server 酱给你的 <code>SCKEY</code>：</p>
+<p>点击发送消息，会看到 Server 酱给你的 <code>SCKEY</code>：</p>
 <p><img src="../../images/tasker-auto-sms/sckey.jpg" alt="sckey"></p>
 <p>为了方便以后修改，我们在手机 Tasker 中新建一个以 <code>%</code> 开头的变量，变量名随意，我命名 <code>%TOKEN</code>：</p>
 <p><img src="../../images/tasker-auto-sms/new_token.jpg" alt="新建变量"></p>
 <p>然后我们把获得的 <code>SCKEY</code> ，填入 <code>%TOKEN</code> 中：</p>
 <p><img src="../../images/tasker-auto-sms/edit_token.png" alt="输入变量"></p>
-<p>接下来我们新建一个任务</p>
+<p>新建一个任务</p>
 <p>点击 <strong>网络 → HTTP Request</strong>，然后在「URL」输入:</p>
 <p><code>https://sc.ftqq.com/%SCKEY.send?text=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;desp=%VERIFICATION_CODE</code></p>
-<p>接下来我们直接返回到首页，再点击右上角的 <code>✓</code> 保存，Server 酱的配置就完成啦！</p>
+<p>直接返回到首页，再点击右上角的 <code>✓</code> 保存，Server 酱的配置就完成啦！</p>
 <p>我们来测试一条带验证码的短信，看看能不能推送到微信里：</p>
 <p><img src="../../images/tasker-auto-sms/bd_sms.png" alt="测试短信"></p>
 <p>微信收到Server酱推送啦，成功！</p>

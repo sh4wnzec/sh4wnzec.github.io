@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>利用 Tasker 实现短信自动转发</title>
-      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms/</link>
+      <title>利用 Tasker 实现短信自动转发：截取短信</title>
+      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms_1/</link>
       <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms/</guid>
+      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms_1/</guid>
       <description>短信自动转发有很多使用场景，比如有两个单卡手机，一个手机不长用，但是要来接收验证码。这时候接收短信并直接推送给微信就方便的多； 我折腾这玩意最初的目的是因为和几个哥们合租的百度网盘，但是百度账号绑定的是</description>
+    </item>
+    
+    <item>
+      <title>利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一）</title>
+      <link>https://sh4wnzec.github.io/posts/tasker-auto-sms_2/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/tasker-auto-sms_2/</guid>
+      <description>上一篇 利用 Tasker 实现短信自动转发：截取短信 我们知道了如何把短信存储到 Tasker 中，既然已经存储了，那么肯定是要推送出去嘛； 推送到微信的话，我们要借助第三方信息推送平台。 这里列举了 Server 酱 ，如果您习惯其他平台，方法类似</description>
     </item>
     
   </channel>

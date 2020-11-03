@@ -9,9 +9,9 @@
   <meta name="description" content="Blog.">
   <meta name="keywords" content="[Blog Sh4wnZec]">
   
-  <link rel="prev" href="https://sh4wnzec.github.io/posts/vscode-mark/" />
-  <link rel="next" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" />
-  <link rel="canonical" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_2/" />
+  <link rel="prev" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" />
+  
+  <link rel="canonical" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_3/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一） | Sh4wnZec
+           利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec
        
   </title>
-  <meta name="title" content="利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一） | Sh4wnZec">
+  <meta name="title" content="利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/sh4wnzec.github.io\/"
     },
     "articleSection" : "posts",
-    "name" : "利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一）",
-    "headline" : "利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一）",
-    "description" : "上一篇 利用 Tasker 实现短信自动转发：截取短信 我们知道了如何把短信存储到 Tasker 中，既然已经存储了，那么肯定是要推送出去嘛； 推送到微信的话，我们要借助第三方信息推送平台。 这里列举了 Server 酱 ，如果您习惯其他平台，方法类似",
+    "name" : "利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二）",
+    "headline" : "利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二）",
+    "description" : "上一篇 利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一），我们成功把存在 Tasker 中的短信推送到微信（如果不知道怎么截取短信，可以参考 利用 Tasker 实现短信自动转发：截取短信） 但是有的消息想要多个人接收到，而 Server 酱不支持",
     "inLanguage" : "en",
     "author" : "Sh4wnZec",
     "creator" : "Sh4wnZec",
@@ -54,10 +54,10 @@
     "accountablePerson" : "Sh4wnZec",
     "copyrightHolder" : "Sh4wnZec",
     "copyrightYear" : "2020",
-    "datePublished": "2020-11-02 00:00:00 \u002b0000 UTC",
-    "dateModified" : "2020-11-02 00:00:00 \u002b0000 UTC",
-    "url" : "https:\/\/sh4wnzec.github.io\/posts\/tasker-auto-sms_2\/",
-    "wordCount" : "505",
+    "datePublished": "2020-11-03 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2020-11-03 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/sh4wnzec.github.io\/posts\/tasker-auto-sms_3\/",
+    "wordCount" : "873",
     "keywords" : [ "Tasker","SMS","Android","Server 酱", "Sh4wnZec"]
 }
 </script>
@@ -116,11 +116,11 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一）</h1>
+        <h1 class="post-title" itemprop="name headline">利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二）</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://sh4wnzec.github.io/" rel="author">Sh4wnZec</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-11-02 itemprop="datePublished">November 2, 2020</time>
+                on <time datetime=2020-11-03 itemprop="datePublished">November 3, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
@@ -148,40 +148,50 @@
           
 
           <blockquote>
-<p>上一篇 <a href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/">利用 Tasker 实现短信自动转发：截取短信</a> 我们知道了如何把短信存储到 Tasker 中，既然已经存储了，那么肯定是要推送出去嘛；
-推送到微信的话，我们要借助第三方信息推送平台。
-这里列举了 <a href="http://sc.ftqq.com/3.version">Server 酱</a> <!-- 和 [Push Plus](https://pushplus.hxtrip.com/)（支持群组） 这两个平台 -->，如果您习惯其他平台，方法类似，可以作为参考；</p>
+<p>上一篇 <a href="https://sh4wnzec.github.io/posts/tasker-auto-sms_2/">利用 Tasker 实现短信自动转发：通过 Server 酱推送到微信（一）</a>，我们成功把存在 Tasker 中的短信推送到微信（如果不知道怎么截取短信，可以参考 <a href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/">利用 Tasker 实现短信自动转发：截取短信</a>）
+但是有的消息想要多个人接收到，而 Server 酱不支持一对多推送，这时候可以使用 <a href="https://pushplus.hxtrip.com/">Push Plus</a> 这个平台，不仅支持一对一推送，还支持一对多发送；</p>
 </blockquote>
 <h2 id="前期准备">前期准备</h2>
-<p><a href="https://www.coolapk.com/apk/net.dinglisch.android.taskerm">Tasker</a> / <a href="http://sc.ftqq.com/3.version">Server 酱</a></p>
-<p>进入 <a href="http://sc.ftqq.com/3.version">Server 酱</a> 官网</p>
-<p>点击登入：</p>
-<p><img src="../../images/tasker-auto-sms/login.jpg" alt="登入"></p>
-<p>这里是直接用 Github 授权登录的，输入 Github 账号直接授权：</p>
-<p><img src="../../images/tasker-auto-sms/github_sign_in.png" alt="Github授权"></p>
+<p><a href="https://www.coolapk.com/apk/net.dinglisch.android.taskerm">Tasker</a> / <a href="https://pushplus.hxtrip.com/">Push Plus</a></p>
+<p>进入 <a href="https://pushplus.hxtrip.com/">Push Plus</a> 官网</p>
+<p>点击登录：</p>
+<p><img src="../../images/tasker-auto-sms/check_push_plus_login.png" alt="登录"></p>
 <p>接下来要绑定微信，点击微信推送，拿手机微信扫码后关注：</p>
-<p><img src="../../images/tasker-auto-sms/wechat_qrcode.jpg" alt="扫码二维码绑定 server 酱"></p>
-<p>点击发送消息，会看到 Server 酱给你的 <code>SCKEY</code>：</p>
-<p><img src="../../images/tasker-auto-sms/sckey.jpg" alt="sckey"></p>
-<h2 id="通过-server-酱推送到微信">通过 Server 酱推送到微信</h2>
-<p>为了方便以后修改，我们在手机的 Tasker 中新建一个以 <code>%</code> 开头的变量，变量名随意，我命名 <code>%SCKEY</code>：</p>
-<p><img src="../../images/tasker-auto-sms/new_sckey.png" alt="新建变量"></p>
-<p>然后我们把获得的 <code>SCKEY</code> ，填入 <code>%SCKEY</code> 中：</p>
-<p><img src="../../images/tasker-auto-sms/edit_sckey.png" alt="输入变量"></p>
+<p><img src="../../images/tasker-auto-sms/push_plus_qrcode.png" alt="扫码二维码绑定 Push Plus 酱"></p>
+<p>微信关注后，网页就自动登录了，点击 <strong>一对多推送</strong>，会看到 Push Plus 给你的 <code>TOKEN</code>：</p>
+<p><img src="../../images/tasker-auto-sms/get_token.jpg" alt="token"></p>
+<p>如果想要实现群发，可以新建一个群组：</p>
+<p><img src="../../images/tasker-auto-sms/new_group.jpg" alt="新建群组"></p>
+<p>我这里随意新建了一个；</p>
+<p>可以看到右侧有「查看二维码」、「订阅人」和「删除」，三个选项：</p>
+<p><img src="../../images/tasker-auto-sms/group_list.jpg" alt="新建群组"></p>
+<p>可以把二维码发送给想要推送的朋友，加入群组中；</p>
+<p>点击「订阅人」可以看到订阅人列表：</p>
+<p><img src="../../images/tasker-auto-sms/friends.jpg" alt="新建群组"></p>
+<h2 id="通过-push-plus-推送到微信">通过 Push Plus 推送到微信</h2>
+<p>同样的，为了方便以后修改，我们在手机的 Tasker 中新建一个以 <code>%</code> 开头的变量，变量名随意，我命名 <code>%TOKEN</code>：</p>
+<p><img src="../../images/tasker-auto-sms/new_token.png" alt="新建变量"></p>
+<p>然后我们把获得的 <code>TOKEN</code> ，填入 <code>%TOKEN</code> 中：</p>
+<p><img src="../../images/tasker-auto-sms/edit_token.png" alt="输入变量"></p>
 <p>在 <strong>任务Tab 栏</strong> 新建一个任务；</p>
 <p>点击 <strong>网络 → HTTP Request</strong></p>
 <p>「Method」选择 <code>GET</code></p>
+<h3 id="推送到个人">推送到个人</h3>
 <p>「URL」输入：</p>
-<p><code>https://sc.ftqq.com/%SCKEY.send?text=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;desp=%VERIFICATION_CODE</code></p>
-<p><img src="../../images/tasker-auto-sms/set_url.png" alt="设置 HTTP 请求"></p>
-<p>直接返回到首页，再点击右上角的 <code>✓</code> 保存，Server 酱的配置就完成啦！</p>
+<p><code>http://pushplus.hxtrip.com/send?token=%TOKEN&amp;title=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;content=%VERIFICATION_CODE&amp;template=html</code></p>
+<h3 id="推送到群组">推送到群组</h3>
+<p>「URL」输入：</p>
+<p>其实就是在推送到个人的链接后面加上 <code>&amp;topic=&lt;你的群组编码&gt;</code>：</p>
+<p><code>http://pushplus.hxtrip.com/send?token=%TOKEN&amp;title=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;content=%VERIFICATION_CODE&amp;template=html&amp;topic=&lt;你的群组编码&gt;</code></p>
+<p><img src="../../images/tasker-auto-sms/set_url_2.png" alt="设置 HTTP 请求"></p>
+<p>直接返回到首页，再点击右上角的 <code>✓</code> 保存；</p>
 <p>我们来测试一条带验证码的短信，看看能不能推送到微信里：</p>
-<p><img src="../../images/tasker-auto-sms/bd_sms.png" alt="测试短信"></p>
-<p>微信收到Server酱推送啦</p>
-<p><img src="../../images/tasker-auto-sms/ft_sms.png" alt="sever 酱推送"></p>
+<p><img src="../../images/tasker-auto-sms/sms_test.png" alt="测试短信"></p>
+<p>微信收到 Push Plus 推送啦</p>
+<p><img src="../../images/tasker-auto-sms/push_push.png" alt="sever 酱推送"></p>
 <p>点进去查看消息：</p>
-<p><img src="../../images/tasker-auto-sms/check_news.png" alt="查看推送"></p>
-<p>成功接收！至此，通过 Server 酱推送到微信就完成啦！</p>
+<p><img src="../../images/tasker-auto-sms/see_news.png" alt="查看推送"></p>
+<p>成功接收！至此，通过 Push Plus 一对多推送到微信就完成啦！</p>
 
     </div>
 
@@ -196,7 +206,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://sh4wnzec.github.io/posts/tasker-auto-sms_2/>https://sh4wnzec.github.io/posts/tasker-auto-sms_2/</span>
+                    <a href=https://sh4wnzec.github.io/posts/tasker-auto-sms_3/>https://sh4wnzec.github.io/posts/tasker-auto-sms_3/</span>
             </p>
             
             
@@ -230,10 +240,8 @@
 
     <div class="post-nav">
         
-        <a href="https://sh4wnzec.github.io/posts/vscode-mark/" class="prev" rel="prev" title="VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法"><i class="iconfont icon-left"></i>&nbsp;VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法</a>
+        <a href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" class="prev" rel="prev" title="利用 Tasker 实现短信自动转发：截取短信"><i class="iconfont icon-left"></i>&nbsp;利用 Tasker 实现短信自动转发：截取短信</a>
          
-        
-        <a href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" class="next" rel="next" title="利用 Tasker 实现短信自动转发：截取短信">利用 Tasker 实现短信自动转发：截取短信&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

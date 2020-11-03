@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,25 @@
     <item>
       <title>Android</title>
       <link>https://sh4wnzec.github.io/tags/android/</link>
-      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Server 酱</title>
+      <link>https://sh4wnzec.github.io/tags/server-%E9%85%B1/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/tags/server-%E9%85%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SMS</title>
       <link>https://sh4wnzec.github.io/tags/sms/</link>
-      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/tags/sms/</guid>
       <description></description>
@@ -32,7 +41,7 @@
     <item>
       <title>Tasker</title>
       <link>https://sh4wnzec.github.io/tags/tasker/</link>
-      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/tags/tasker/</guid>
       <description></description>

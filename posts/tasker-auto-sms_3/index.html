@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noodp"/>
-  <meta name="author" content="Sh4wnZec">
-  <meta name="description" content="Blog.">
-  <meta name="keywords" content="[Blog Sh4wnZec]">
-  
-  <link rel="prev" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" />
-  
-  <link rel="canonical" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_3/" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <title>
-       
-       
-           利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec
-       
-  </title>
-  <meta name="title" content="利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="Sh4wnZec">
+    <meta name="description" content="Blog.">
+    <meta name="keywords" content="[Blog Sh4wnZec]">
     
+    <link rel="prev" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_1/" />
+    
+    <link rel="canonical" href="https://sh4wnzec.github.io/posts/tasker-auto-sms_3/" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+         
+         
+             利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec
+         
+    </title>
+    <meta name="title" content="利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二） | Sh4wnZec">
+      
   
   <link rel="stylesheet" href="/font/iconfont.css">
   <link rel="stylesheet" href="/css/main.min.css">
 
 
-  
-  
+    
+    
  
 
 <script type="application/ld+json">
- "@context" : "http://schema.org",
+{   "@context" : "http://schema.org",
     "@type" : "BlogPosting",
     "mainEntityOfPage": {
          "@type": "WebPage",
@@ -57,19 +58,38 @@
     "datePublished": "2020-11-03 00:00:00 \u002b0000 UTC",
     "dateModified" : "2020-11-03 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/sh4wnzec.github.io\/posts\/tasker-auto-sms_3\/",
-    "wordCount" : "873",
+    "wordCount" : "877",
     "keywords" : [ "Tasker","SMS","Android","Server 酱", "Sh4wnZec"]
 }
 </script>
 
-</head>
-
+  </head>
   
+    
+   
+<aside class="side-toc">
+    
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前期准备">前期准备</a></li>
+    <li><a href="#通过-push-plus-推送到微信">通过 Push Plus 推送到微信</a>
+      <ul>
+        <li><a href="#推送到个人">推送到个人</a></li>
+        <li><a href="#推送到群组">推送到群组</a></li>
+      </ul>
+    </li>
+    <li><a href="#测试短信">测试短信</a></li>
+  </ul>
+</nav>
+</aside>
 
 
-  <body class="">
-    <div class="wrapper">
-        <nav class="navbar">
+<body class="">
+  <div class="wrapper">
+    <nav class="navbar">
+    
+        <div class="top-scroll-bar"></div>
+    
     <div class="container">
         <div class="navbar-header header-logo">
         	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a>
@@ -89,6 +109,9 @@
     </div>
 </nav>
 <nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <div class="top-scroll-bar"></div>
+    
      <div class="container">
         <div class="navbar-header">
             <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a></div>
@@ -111,22 +134,24 @@
         </div>
     </div>
 </nav>
-    	 <main class="main">
-          <div class="container">
-      		
+    
+    
+    <main class="main">
+      <div class="container">
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二）</h1>
         <div class="post-meta">
-                Written by <a itemprop="name" href="https://sh4wnzec.github.io/" rel="author">Sh4wnZec</a> with ♥ 
+                发表于 
                 <span class="post-time">
-                on <time datetime=2020-11-03 itemprop="datePublished">November 3, 2020</time>
+                    <time datetime=2020-11-03 itemprop="datePublished">November 3, 2020</time>
                 </span>
-                in
-                <i class="iconfont icon-folder"></i>
+                | 分类于
+                
                 <span class="post-category">
                         
                 </span>
+                <span class="post-word-count">（877 Words，阅读时间约 2 Min）</span>
         </div>
     </header>
     <div class="post-content">
@@ -185,6 +210,7 @@
 <p><code>http://pushplus.hxtrip.com/send?token=%TOKEN&amp;title=&lt;这里把包括尖括号内的文字替换成想要的标题&gt;&amp;content=%VERIFICATION_CODE&amp;template=html&amp;topic=&lt;你的群组编码&gt;</code></p>
 <p><img src="../../images/tasker-auto-sms/set_url_2.png" alt="设置 HTTP 请求"></p>
 <p>直接返回到首页，再点击右上角的 <code>✓</code> 保存；</p>
+<h2 id="测试短信">测试短信</h2>
 <p>我们来测试一条带验证码的短信，看看能不能推送到微信里：</p>
 <p><img src="../../images/tasker-auto-sms/sms_test.png" alt="测试短信"></p>
 <p>微信收到 Push Plus 推送啦</p>
@@ -196,19 +222,6 @@
     </div>
 
     <div class="post-copyright">
-             
-            <p class="copyright-item">
-                <span>Author:</span>
-                <span>Sh4wnZec </span>
-                </p>
-            
-           
-             
-            <p class="copyright-item">
-                    <span>Link:</span>
-                    <a href=https://sh4wnzec.github.io/posts/tasker-auto-sms_3/>https://sh4wnzec.github.io/posts/tasker-auto-sms_3/</span>
-            </p>
-            
             
     </div>
 
@@ -250,10 +263,9 @@
                  
           
     </div>
-</article>
-          </div>
-		   </main>
-      <footer class="footer">
+</article></div>
+    </main>
+    <footer class="footer">
     <div class="copyright">
         &copy;
         
@@ -265,8 +277,13 @@
          
 
          
-		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
-    </div>
+		  <span>
+           Powered by
+           <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a>
+           <span> &  </span>
+           <a href="https://github.com/cyseria/LeaveIt" target="_blank" rel="external nofollow">LeaveIt</a>
+         </span> 
+      </div>
 </footer>
 
 
@@ -280,15 +297,24 @@
 
 
 
+
+
+<script type="text/javascript">
+    var message_Path =  null 
+    var home_Path =  null   
+</script>
+
+
     
      <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
       
      <script src="/js/vendor_gallery.min.js" async="" ></script>
     
-  
 
 
 
-     </div>
-  </body>
+
+  </div>
+</body>
+
 </html>

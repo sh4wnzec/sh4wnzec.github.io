@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sh4wnZec on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/</link>
+    <description>Recent content in Sh4wnZec on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sh4wnzec.github.io/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://sh4wnzec.github.io/posts/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sh4wnzec.github.io/about/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/about/</guid>
+      <description>&lt;p&gt;Sh4wnZec，一个辣鸡程序员。😀&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

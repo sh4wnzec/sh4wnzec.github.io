@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>碎碎念 on Sh4wnZec</title>
+    <link>https://sh4wnzec.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</link>
+    <description>Recent content in 碎碎念 on Sh4wnZec</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sh4wnzec.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP 开启严格模式</title>
+      <link>https://sh4wnzec.github.io/posts/php-mark/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/php-mark/</guid>
+      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了 declare ，哪个文件中的所有代码就需要检查。 PHP Db事务 以后写事务一定要先把完整句子写完再写逻辑。</description>
+    </item>
+    
+  </channel>
+</rss>

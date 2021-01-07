@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux</title>
+      <link>https://sh4wnzec.github.io/tags/linux/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>服务器</title>
+      <link>https://sh4wnzec.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Android</title>
@@ -125,24 +143,6 @@
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wechat</title>
-      <link>https://sh4wnzec.github.io/tags/wechat/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/tags/wechat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xposed</title>
-      <link>https://sh4wnzec.github.io/tags/xposed/</link>
-      <pubDate>Sun, 23 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/tags/xposed/</guid>
       <description></description>
     </item>
     

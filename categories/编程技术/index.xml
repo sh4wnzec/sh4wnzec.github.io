@@ -6,10 +6,19 @@
     <description>Recent content in 编程・技术 on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux 学习笔记</title>
+      <link>https://sh4wnzec.github.io/posts/linux-mark/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/linux-mark/</guid>
+      <description>-bash: yum-config-manager: 未找到命令 没有安装这个命令，该命令在【yum-utils】包里，需要安装： yum -y install yum-utils</description>
+    </item>
     
     <item>
       <title>VSCode &#39;[command] : 无法加载文件 XXX，因为在此系统上禁止运行脚本。&#39; 解决方法</title>
@@ -53,7 +62,7 @@
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sh4wnzec.github.io/posts/php-mark/</guid>
-      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了 declare ，哪个文件中的所有代码就需要检查。</description>
+      <description>申明 declare (strict_types=1); 的作用 strict_types=1 针对参数类型开启严格模式，进行数据类型检验，默认是弱类型校验 哪个文件写了 declare ，哪个文件中的所有代码就需要检查。 PHP Db事务 以后写事务一定要先把完整句子写完再写逻辑。</description>
     </item>
     
     <item>

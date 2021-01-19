@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="Sh4wnZec">
+    <meta name="description" content="Blog.">
+    <meta name="keywords" content="[Blog Sh4wnZec]">
+    
+    <link rel="prev" href="https://sh4wnzec.github.io/posts/25-years-old/" />
+    
+    <link rel="canonical" href="https://sh4wnzec.github.io/posts/study-go-mark/" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+         
+         
+             Golang 练习题（01 Week） | Sh4wnZec
+         
+    </title>
+    <meta name="title" content="Golang 练习题（01 Week） | Sh4wnZec">
+      
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+    
+ 
+
+<script type="application/ld+json">
+{   "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/sh4wnzec.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "Golang 练习题（01 Week）",
+    "headline" : "Golang 练习题（01 Week）",
+    "description" : "1. 以下变量名有哪些是不合法的 1a abc a\u0026amp;b 年龄 var bool public a2 2# a2_1 f unction class new 2. 以下变量申明，哪个是正确的？ var i = 1 var i int var i = int i := 1 i = 1 3. 用 itoa 和 const，定义一周的数值，如Monday=1 ，Tuesday=2，依",
+    "inLanguage" : "en",
+    "author" : "Sh4wnZec",
+    "creator" : "Sh4wnZec",
+    "publisher": "Sh4wnZec",
+    "accountablePerson" : "Sh4wnZec",
+    "copyrightHolder" : "Sh4wnZec",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-01-19 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2021-01-19 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/sh4wnzec.github.io\/posts\/study-go-mark\/",
+    "wordCount" : "642",
+    "keywords" : [ "Golang", "Sh4wnZec"]
+}
+</script>
+
+  </head>
+  
+    
+   
+<aside class="side-toc">
+    
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-以下变量名有哪些是不合法的">1. 以下变量名有哪些是不合法的</a></li>
+    <li><a href="#2-以下变量申明哪个是正确的">2. 以下变量申明，哪个是正确的？</a></li>
+    <li><a href="#3-用-itoa-和-const定义一周的数值如monday1-tuesday2依次类推sunday7">3. 用 <code>itoa</code> 和 <code>const</code>，定义一周的数值，如<code>Monday=1</code> ，<code>Tuesday=2</code>，依次类推<code>Sunday=7</code></a></li>
+    <li><a href="#4-实现字符串-123-和整数-123-之间的互转并格式化输出他们转换后的类型和值">4. 实现字符串 <code>123</code> 和整数 <code>123</code> 之间的互转，并格式化输出他们转换后的类型和值</a></li>
+    <li><a href="#5-使用类型别名让-go-语言支持中文关键字如-int-可以用整数型替代">5. 使用类型别名，让 Go 语言支持中文关键字，如 <code>int</code> 可以用整数型替代</a></li>
+    <li><a href="#6-从控制台输入三个整数-xyz并把这三个数由小到大输出">6. 从控制台输入三个整数 <code>x,y,z</code>，并把这三个数由小到大输出</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+<body class="">
+  <div class="wrapper">
+    <nav class="navbar">
+    
+        <div class="top-scroll-bar"></div>
+    
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <div class="top-scroll-bar"></div>
+    
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    <main class="main">
+      <div class="container">
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Golang 练习题（01 Week）</h1>
+        <div class="post-meta">
+                发表于 
+                <span class="post-time">
+                    <time datetime=2021-01-19 itemprop="datePublished">January 19, 2021</time>
+                </span>
+                | 分类于
+                
+                <span class="post-category">
+                        
+                </span>
+                <span class="post-word-count">（642 Words，阅读时间约 2 Min）</span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <hr>
+<h2 id="1-以下变量名有哪些是不合法的">1. 以下变量名有哪些是不合法的</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 1a</li>
+<li><input disabled="" type="checkbox"> abc</li>
+<li><input checked="" disabled="" type="checkbox"> a&amp;b</li>
+<li><input disabled="" type="checkbox"> 年龄</li>
+<li><input checked="" disabled="" type="checkbox"> var</li>
+<li><input disabled="" type="checkbox"> bool</li>
+<li><input disabled="" type="checkbox"> public</li>
+<li><input disabled="" type="checkbox"> a2</li>
+<li><input checked="" disabled="" type="checkbox"> 2#</li>
+<li><input disabled="" type="checkbox"> a2_1</li>
+<li><input checked="" disabled="" type="checkbox"> f unction</li>
+<li><input disabled="" type="checkbox"> class</li>
+<li><input disabled="" type="checkbox"> new</li>
+</ul>
+<h2 id="2-以下变量申明哪个是正确的">2. 以下变量申明，哪个是正确的？</h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> var i = 1</li>
+<li><input checked="" disabled="" type="checkbox"> var i int</li>
+<li><input disabled="" type="checkbox"> var i = int</li>
+<li><input checked="" disabled="" type="checkbox"> i := 1</li>
+<li><input disabled="" type="checkbox"> i = 1</li>
+</ul>
+<h2 id="3-用-itoa-和-const定义一周的数值如monday1-tuesday2依次类推sunday7">3. 用 <code>itoa</code> 和 <code>const</code>，定义一周的数值，如<code>Monday=1</code> ，<code>Tuesday=2</code>，依次类推<code>Sunday=7</code></h2>
+<p><strong>代码：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+ <span class="s">&#34;fmt&#34;</span>
+<span class="p">)</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(){</span>
+ <span class="kd">const</span><span class="p">(</span>
+  <span class="nx">Monday</span> <span class="kt">int</span> <span class="p">=</span> <span class="kc">iota</span><span class="o">+</span><span class="mi">1</span>
+  <span class="nx">Tuesday</span>
+  <span class="nx">Wednesday</span>
+  <span class="nx">Thursday</span>
+  <span class="nx">Friday</span>
+  <span class="nx">Saturday</span>
+  <span class="nx">Sunday</span>
+ <span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Monday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Monday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Tuesday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Tuesday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Wednesday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Wednesday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Thursday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Thursday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Friday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Friday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Saturday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Saturday</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Sunday=%d\n&#34;</span><span class="p">,</span> <span class="nx">Sunday</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><p><strong>控制台：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS D:<span class="se">\w</span>orkspace<span class="se">\g</span>oproject<span class="se">\s</span>rc<span class="se">\s</span>tudy-go-project&gt; go run .<span class="se">\m</span>ain.go
+<span class="nv">Monday</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">Tuesday</span><span class="o">=</span><span class="m">2</span>
+<span class="nv">Wednesday</span><span class="o">=</span><span class="m">3</span>
+<span class="nv">Thursday</span><span class="o">=</span><span class="m">4</span>
+<span class="nv">Friday</span><span class="o">=</span><span class="m">5</span>
+<span class="nv">Saturday</span><span class="o">=</span><span class="m">6</span>
+<span class="nv">Sunday</span><span class="o">=</span><span class="m">7</span>
+</code></pre></div><h2 id="4-实现字符串-123-和整数-123-之间的互转并格式化输出他们转换后的类型和值">4. 实现字符串 <code>123</code> 和整数 <code>123</code> 之间的互转，并格式化输出他们转换后的类型和值</h2>
+<p><strong>代码：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+ <span class="s">&#34;fmt&#34;</span>
+ <span class="s">&#34;strconv&#34;</span>
+<span class="p">)</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(){</span>
+ <span class="kd">var</span> <span class="nx">i</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">10</span>
+ <span class="nx">strconv</span><span class="p">.</span><span class="nf">Itoa</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+ <span class="kd">var</span> <span class="nx">j</span> <span class="kt">string</span> <span class="p">=</span> <span class="s">&#34;20&#34;</span>
+ <span class="nx">strconv</span><span class="p">.</span><span class="nf">Atoi</span><span class="p">(</span><span class="nx">j</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;变量 i 的值为：%d，转换后的类型为：%T\n&#34;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;变量 j 的值为：%s，转换后的类型为：%T&#34;</span><span class="p">,</span> <span class="nx">j</span><span class="p">,</span> <span class="nx">j</span><span class="p">)</span>
+<span class="p">}</span>
+
+
+</code></pre></div><p><strong>控制台：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS D:<span class="se">\w</span>orkspace<span class="se">\g</span>oproject<span class="se">\s</span>rc<span class="se">\s</span>tudy-go-project&gt; go run .<span class="se">\m</span>ain.go
+变量 i 的值为：10，转换后的类型为：int
+变量 j 的值为：20，转换后的类型为：string
+</code></pre></div><h2 id="5-使用类型别名让-go-语言支持中文关键字如-int-可以用整数型替代">5. 使用类型别名，让 Go 语言支持中文关键字，如 <code>int</code> 可以用整数型替代</h2>
+<p><strong>代码：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+ <span class="s">&#34;fmt&#34;</span>
+<span class="p">)</span>
+<span class="kd">type</span> <span class="nx">姓名</span> <span class="kt">string</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(){</span>
+ <span class="kd">var</span> <span class="nx">name</span> <span class="nx">姓名</span> <span class="p">=</span> <span class="s">&#34;王大锤&#34;</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+<span class="p">}</span>
+
+</code></pre></div><h2 id="6-从控制台输入三个整数-xyz并把这三个数由小到大输出">6. 从控制台输入三个整数 <code>x,y,z</code>，并把这三个数由小到大输出</h2>
+<p><strong>代码：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="p">(</span>
+ <span class="s">&#34;fmt&#34;</span>
+<span class="p">)</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">(){</span>
+ <span class="nx">x</span> <span class="o">:=</span> <span class="mi">10086</span>
+ <span class="nx">y</span> <span class="o">:=</span> <span class="mi">10000</span>
+ <span class="nx">z</span> <span class="o">:=</span> <span class="mi">10010</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;有三个数，分别是：\n%d，%d，%d\n&#34;</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">)</span>
+ <span class="k">if</span> <span class="nx">x</span><span class="p">&gt;</span><span class="nx">y</span> <span class="p">{</span>
+  <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="p">=</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">x</span>
+ <span class="p">}</span>
+ <span class="k">if</span> <span class="nx">x</span><span class="p">&gt;</span><span class="nx">z</span> <span class="p">{</span>
+  <span class="nx">x</span><span class="p">,</span> <span class="nx">z</span> <span class="p">=</span> <span class="nx">z</span><span class="p">,</span> <span class="nx">x</span>
+ <span class="p">}</span>
+ <span class="k">if</span> <span class="nx">y</span><span class="p">&gt;</span><span class="nx">z</span> <span class="p">{</span>
+  <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span> <span class="p">=</span> <span class="nx">z</span><span class="p">,</span> <span class="nx">y</span>
+ <span class="p">}</span>
+ <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;由小到大依次排序为：\n%d &lt; %d &lt; %d\n&#34;</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">)</span>
+<span class="p">}</span>
+
+
+
+
+</code></pre></div><p><strong>控制台：</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">PS D:<span class="se">\w</span>orkspace<span class="se">\g</span>oproject<span class="se">\s</span>rc<span class="se">\s</span>tudy-go-project&gt; go run .<span class="se">\m</span>ain.go
+有三个数，分别是：
+10086，10000，10010
+由小到大依次排序为：
+<span class="m">10000</span> &lt; <span class="m">10010</span> &lt; <span class="m">10086</span>
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://sh4wnzec.github.io/tags/golang/">
+                    #Golang</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://sh4wnzec.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://sh4wnzec.github.io/posts/25-years-old/" class="prev" rel="prev" title="25 岁的我，渐渐有了方向。"><i class="iconfont icon-left"></i>&nbsp;25 岁的我，渐渐有了方向。</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article></div>
+    </main>
+    <footer class="footer">
+   <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+   <div class="copyright">
+      &copy; 
+      <span class="with-love">
+         <i class="iconfont icon-love"></i>
+      </span>
+      
+      <span class="author" itemprop="copyrightHolder"><a href="https://sh4wnzec.github.io/">Sh4wnZec</a> |
+      </span>
+       
+      <span>
+         Powered by
+         <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a>
+         <span> & </span>
+         <a href="https://github.com/cyseria/LeaveIt" target="_blank" rel="external nofollow">LeaveIt</a>
+      </span>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var message_Path =  null 
+    var home_Path =  null   
+</script>
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+
+
+
+
+  </div>
+</body>
+
+</html>

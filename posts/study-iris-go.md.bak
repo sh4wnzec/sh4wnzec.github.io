@@ -1,0 +1,81 @@
+---
+title: "Go 学习笔记"
+author: "Sh4wnZec"
+date: 2020-09-21
+
+tags : [
+"Golang","Iris-Go"
+]
+categories : [
+"编程・技术"
+]
+---
+## 安装
+
+### 错误1
+
+开始学习Go-Iris框架，跟着文档走安装流程
+
+```go
+go get github.com/kataras/iris
+```
+
+这一步时，却报错：
+
+``` shell
+cannot find package "github.com/russross/blackfriday/v2" in any of:
+        D:\Go\src\github.com\russross\blackfriday\v2 (from $GOROOT)
+        D:\workspace\goproject\src\github.com\russross\blackfriday\v2 (from $GOPATH)
+cannot find package "github.com/CloudyKit/jet/v4" in any of:
+        D:\Go\src\github.com\CloudyKit\jet\v4 (from $GOROOT)
+        D:\workspace\goproject\src\github.com\CloudyKit\jet\v4 (from $GOPATH)
+```
+
+### 解决过程
+
+这里提示在 `$GOROOT \src\github.com\` 和 `$GOPATH \src\github.com` 中没有找到对应的包文件，但实际我们只需要管`$GOPATH`的路径就行，那我们要先去这`$GOPATH`下看看。
+
+切换到 `$GOROOT \src\github.com\russross\blackfriday` 目录下
+
++ blackfriday
+  + v2@v2.0.1
+    + .git
+    + testdata
+    + .gitignore
+    + .travis.yml
+    + block.go
+    + block_test.go
+    + doc.go
+    + go.mod
+    + html.go
+    + inline.go
+    + inline_test.go
+    + latex.go
+    + LICENSE.txt
+    + markdown.go
+    + markdown_test.go
+    + README.md
+    + ref_test.go
+    + smartypants.go
+
+这么目录下是有文件的，打开 `go.mod` ，
+
+``` go
+module github.com/russross/blackfriday/v2
+```
+
+里面也定义了路径。
+
+那会不会是环境变量的问题呢？
+
+检查了下 Go 环境变量，控制台输入 `go env`，环境变量同样没错。
+
+### 解决方案
+
+One Month Later...
+
+不是环境变量的问题...
+
+最后检查了下代理，发现是 GOPROXY 的问题，控制台输入 `go env -w GOPROXY=https://goproxy.cn,direct`，把代理环境改为国内的，就能正常安装了。
+
+淦。

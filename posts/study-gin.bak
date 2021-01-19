@@ -1,0 +1,32 @@
+---
+title: "Gin 学习笔记"
+author: "Sh4wnZec"
+date: 2021-01-09
+
+tags : [
+"Go","Gin"
+]
+categories : [
+"编程・技术"
+]
+---
+---
+使用
+
+```shell
+go get github.com/gin-gonic/gin
+```
+
+安装 Gin 框架时，提示：
+
+```shell
+PS D:\workspace\goproject> go get github.com/gin-gonic/gin
+package github.com/gin-gonic/gin: no Go files in D:\workspace\goproject\src\github.com\gin-gonic\gin
+```
+
+原因是在使用 GOPROXY 的时候，开启了 GO111MODULE，导致包管理非官方所说的在 `$GOPATH\src\`，而是去了 `$GOPATH\src\pkg\` 目录下，此时就需要用 `go mod` 引入这些包 require github.com/gin-gonic/gin@latest ，解决 import 获取不了包的问题。
+
+```shell
+ go mod init gin
+ go mod edit -require github.com/gin-gonic/gin@latest
+```

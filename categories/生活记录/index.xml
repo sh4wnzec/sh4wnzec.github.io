@@ -6,19 +6,10 @@
     <description>Recent content in 生活・记录 on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sh4wnzec.github.io/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Android 免 ROOT 对应用权限进行管理</title>
-      <link>https://sh4wnzec.github.io/posts/get-fake-root/</link>
-      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/posts/get-fake-root/</guid>
-      <description>前期准备 ADB 工具包 / Shizuku / App Ops 开始 下载 Shizuku 与 App Ops； 手机连接电脑，USB 连接方式选择『传输文件』： 解压下载的 ADB 工具包，在目录输入cmd， 回车打开 命令提示符： 输入 adb devices，可以查看当前连接的手机设备</description>
-    </item>
     
     <item>
       <title>25 岁的我，渐渐有了方向。</title>

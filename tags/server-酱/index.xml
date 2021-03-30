@@ -6,11 +6,7 @@
     <description>Recent content in Server 酱 on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://sh4wnzec.github.io/tags/server-%E9%85%B1/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/tags/server-%E9%85%B1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用 Tasker 实现短信自动转发：通过 Push Plus 实现一对多推送到微信（二）</title>
       <link>https://sh4wnzec.github.io/posts/tasker-auto-sms_3/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in 编程・技术 on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue cli 3 项目创建时，Git Bash 箭头选择无效</title>
+      <link>https://sh4wnzec.github.io/posts/vscode-mark-copy/</link>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/vscode-mark-copy/</guid>
+      <description>问题 在 Git Bash 输入 vue create xxx 创建项目，选择选项时没有光标； 解决方法 找到 Git Bash 的安装目录，前往 etc 目录，找到 bash.bashrc 文件； 在该文件末尾新增一行 ：alias vue=&#39;winpty vue.cmd&#39; 重启 Git Bash 即可。</description>
+    </item>
+    
     <item>
       <title>Golang 练习题（01 Week）</title>
       <link>https://sh4wnzec.github.io/posts/study-go-mark/</link>

@@ -6,13 +6,22 @@
     <description>Recent content in Posts on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>注册 Google 账号</title>
+      <link>https://sh4wnzec.github.io/posts/google-voice/</link>
+      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/google-voice/</guid>
+      <description>打开全局代理后，点击创建Google账户； 按照正常的创建流程走，手机号可以填写自己的； 注册之后，点击 Goole Voice 官网，首页有两个按钮，点击「For personal use」后弹出下拉菜单，选择「Web」，网页会跳转到注册页面</description>
+    </item>
+    
     <item>
       <title>Vue cli 3 项目创建时，Git Bash 箭头选择无效</title>
-      <link>https://sh4wnzec.github.io/posts/vscode-mark-copy/</link>
+      <link>https://sh4wnzec.github.io/posts/git-mark/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://sh4wnzec.github.io/posts/vscode-mark-copy/</guid>
+      <guid>https://sh4wnzec.github.io/posts/git-mark/</guid>
       <description>问题 在 Git Bash 输入 vue create xxx 创建项目，选择选项时没有光标； 解决方法 找到 Git Bash 的安装目录，前往 etc 目录，找到 bash.bashrc 文件； 在该文件末尾新增一行 ：alias vue=&#39;winpty vue.cmd&#39; 重启 Git Bash 即可。</description>
     </item>
     
@@ -32,6 +41,15 @@
       
       <guid>https://sh4wnzec.github.io/posts/study-go-mark/</guid>
       <description>1. 以下变量名有哪些是不合法的 1a abc a&amp;amp;b 年龄 var bool public a2 2# a2_1 f unction class new 2. 以下变量申明，哪个是正确的？ var i = 1 var i int var i = int i := 1 i = 1 3. 用 itoa 和 const，定义一周的数值，如Monday=1 ，Tuesday=2，依</description>
+    </item>
+    
+    <item>
+      <title>25 岁的我，渐渐有了方向。</title>
+      <link>https://sh4wnzec.github.io/posts/25-years-old-copy/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sh4wnzec.github.io/posts/25-years-old-copy/</guid>
+      <description>每年年末习惯，我都会写一篇 Blog 来总结一整年的工作、生活，但今年就随便写写吧。 说句实话，今年太累了。 这种累工作占据了一大半时间不说，陪伴爸妈外公外婆的日子少的可怜。 我不喜欢这样。 2021 年虽然也忙碌，但是很快乐</description>
     </item>
     
     <item>

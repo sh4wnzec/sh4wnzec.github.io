@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="Sh4wnZec">
+    <meta name="description" content="Blog.">
+    <meta name="keywords" content="[Blog Sh4wnZec]">
+    
+    <link rel="prev" href="https://sh4wnzec.github.io/posts/get-fake-root/" />
+    <link rel="next" href="https://sh4wnzec.github.io/posts/google-voice/" />
+    <link rel="canonical" href="https://sh4wnzec.github.io/posts/git-mark/" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+         
+         
+             Vue cli 3 项目创建时，Git Bash 箭头选择无效 | Sh4wnZec
+         
+    </title>
+    <meta name="title" content="Vue cli 3 项目创建时，Git Bash 箭头选择无效 | Sh4wnZec">
+      
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+    
+ 
+
+<script type="application/ld+json">
+{   "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/sh4wnzec.github.io\/"
+    },
+    "articleSection" : "posts",
+    "name" : "Vue cli 3 项目创建时，Git Bash 箭头选择无效",
+    "headline" : "Vue cli 3 项目创建时，Git Bash 箭头选择无效",
+    "description" : "问题 在 Git Bash 输入 vue create xxx 创建项目，选择选项时没有光标； 解决方法 找到 Git Bash 的安装目录，前往 etc 目录，找到 bash.bashrc 文件； 在该文件末尾新增一行 ：alias vue=\u0027winpty vue.cmd\u0027 重启 Git Bash 即可。",
+    "inLanguage" : "en",
+    "author" : "Sh4wnZec",
+    "creator" : "Sh4wnZec",
+    "publisher": "Sh4wnZec",
+    "accountablePerson" : "Sh4wnZec",
+    "copyrightHolder" : "Sh4wnZec",
+    "copyrightYear" : "2022",
+    "datePublished": "2022-01-04 00:00:00 \u002b0000 UTC",
+    "dateModified" : "2022-01-04 00:00:00 \u002b0000 UTC",
+    "url" : "https:\/\/sh4wnzec.github.io\/posts\/git-mark\/",
+    "wordCount" : "76",
+    "keywords" : [ "Vue.js", "Sh4wnZec"]
+}
+</script>
+
+  </head>
+  
+    
+   
+
+<body class="">
+  <div class="wrapper">
+    <nav class="navbar">
+    
+        <div class="top-scroll-bar"></div>
+    
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <div class="top-scroll-bar"></div>
+    
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://sh4wnzec.github.io/">Sh4wnZec</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+    <main class="main">
+      <div class="container">
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Vue cli 3 项目创建时，Git Bash 箭头选择无效</h1>
+        <div class="post-meta">
+                发表于 
+                <span class="post-time">
+                    <time datetime=2022-01-04 itemprop="datePublished">January 4, 2022</time>
+                </span>
+                | 分类于
+                
+                <span class="post-category">
+                        
+                </span>
+                <span class="post-word-count">（76 Words，阅读时间约 0 Min）</span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <hr>
+<h2 id="问题">问题</h2>
+<p>在 Git Bash 输入 <code>vue create xxx</code> 创建项目，选择选项时没有光标；</p>
+<h2 id="解决方法">解决方法</h2>
+<ul>
+<li>找到 Git Bash 的安装目录，前往 etc 目录，找到 bash.bashrc 文件；</li>
+<li>在该文件末尾新增一行 ：<code>alias vue='winpty vue.cmd'</code></li>
+<li>重启 Git Bash 即可。</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://sh4wnzec.github.io/tags/vue.js/">
+                    #Vue.js</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://sh4wnzec.github.io/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://sh4wnzec.github.io/posts/get-fake-root/" class="prev" rel="prev" title="Android 免 ROOT 对应用权限进行管理"><i class="iconfont icon-left"></i>&nbsp;Android 免 ROOT 对应用权限进行管理</a>
+         
+        
+        <a href="https://sh4wnzec.github.io/posts/google-voice/" class="next" rel="next" title="注册 Google 账号">注册 Google 账号&nbsp;<i class="iconfont icon-right"></i></a>
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article></div>
+    </main>
+    <footer class="footer">
+   <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+   <div class="copyright">
+      &copy; 
+      <span class="with-love">
+         <i class="iconfont icon-love"></i>
+      </span>
+      
+      <span class="author" itemprop="copyrightHolder"><a href="https://sh4wnzec.github.io/">Sh4wnZec</a> |
+      </span>
+       
+      <span>
+         Powered by
+         <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a>
+         <span> & </span>
+         <a href="https://github.com/cyseria/LeaveIt" target="_blank" rel="external nofollow">LeaveIt</a>
+      </span>
+   </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var message_Path =  null 
+    var home_Path =  null   
+</script>
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+
+
+
+
+  </div>
+</body>
+
+</html>

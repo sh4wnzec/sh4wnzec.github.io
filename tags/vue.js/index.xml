@@ -6,16 +6,7 @@
     <description>Recent content in Vue.js on Sh4wnZec</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>注册 Google 账号</title>
-      <link>https://sh4wnzec.github.io/posts/google-voice/</link>
-      <pubDate>Mon, 14 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://sh4wnzec.github.io/posts/google-voice/</guid>
-      <description>打开全局代理后，点击创建Google账户； 按照正常的创建流程走，手机号可以填写自己的； 注册之后，点击 Goole Voice 官网，首页有两个按钮，点击「For personal use」后弹出下拉菜单，选择「Web」，网页会跳转到注册页面</description>
-    </item>
-    
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sh4wnzec.github.io/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vue cli 3 项目创建时，Git Bash 箭头选择无效</title>
       <link>https://sh4wnzec.github.io/posts/git-mark/</link>

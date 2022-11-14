@@ -1,0 +1,57 @@
+---
+title: 注册 Google Voice
+author: "Sh4wnZec"
+date: 2022-11-14
+
+
+tags : [
+"Vue.js"
+]
+categories : [
+"编程・技术"
+]
+---
+---
+
+- 打开全局代理后，点击[创建Google账户](https://accounts.google.com)；
+
+  按照正常的创建流程走，手机号可以填写自己的；
+
+- 注册之后，点击 [Goole Voice 官网](https://voice.google.com/)，首页有两个按钮，点击「For personal use」后弹出下拉菜单，选择「Web」，网页会跳转到注册页面；
+
+  跳过注册，因为注册要美国的手机号，咱们可没有....
+
+  那怎么办？没错，打开万能的某宝[淘宝网](https://www.taobao.com)，搜索`google voice`，会出现一大堆卖「Google Voice」的店家；
+
+  我们随意花 10 块钱左右选一个自动发货的下单店家下单（这里千万不要买成发实体卡的。。。）；
+
+  **买来的账户，风险是不确定的**，不过我们要将买来的「Google Voice」转移到我们自己刚刚注册的「Google 账户」下；
+
+![img](../../images/google-voice/image-20210623174845593.png)
+
+- 自动发货会给你Google的账号密码，登录它，再进入 [Goole Voice 官网](https://voice.google.com/)；
+
+- 点击右上角的「设置」按钮：
+
+  ![img](../../images/google-voice/image-20210623183948067.png)
+  ![测试短信](../../images/tasker-auto-sms/bd_sms.png)
+
+- 进去之后点击「转移」按钮：
+
+  ![iimg](../../images/google-voice/image-20210623183922066.png)
+
+- 会跳转到旧版本的「Google Voice」页面：
+
+  ![img](../../images/google-voice/image-20210623183831406.png)
+
+- 再点击「Transfer」，会弹出Module窗口，如果上面有自己刚刚注册的账号，选择自己的账号点击「Transfer」进行转移；
+
+  没有的话点击「Sign-in to another account」,登录刚刚自己注册时的账号再进行转移：
+
+  ![img](../../images/google-voice/image-20210623183735762.png)
+
+- 如果提示「You’re almost finished」”，即表示转移Google Voice号码成功，这里不必理会叹号警告。
+
+  ![img](../../images/google-voice/transfer-5.png)
+
+- 最后一定要进入自己刚注册的Google Voice再次确认，我这里拿自己的号测试的没图给我截。。。
